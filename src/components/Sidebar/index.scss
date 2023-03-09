@@ -1,0 +1,117 @@
+.nav-bar {  
+    background: #181818;
+    width: 82px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 3;
+    min-height: 500px;
+
+    .logo {
+        display: block;
+        padding: 8px 0;
+        margin-top: .9rem;
+
+        img {                 // Incase you for forgot ==> sass use nested => basically inside the container
+            display: block;
+            margin: 8px auto;
+            width: 28px;
+            height: auto;
+
+            &.sub-logo {
+                width: 62px;
+            }
+        }
+    }
+    nav {
+        display: block;
+        text-align: center;
+        position: absolute;
+        height: 210px;
+        top: 50%;
+        margin-top: -120px;
+        width: 100%;
+        a {
+        // font-size: 22px;  //====> what i changed
+        color: #4d4d4e;
+        display: block;
+        line-height: 51px;
+        position: relative;
+        text-decoration: none;
+        color: #4d4d4e;
+        margin-bottom: 2.5rem;            //================> what I change, delete if needed
+
+            .icon-font {
+                font-size: 2.5rem;            //================> what I change
+            }
+            i {
+                transition: all 0.3s ease-out;
+            }
+            &:hover {
+                color: #ffd700;
+
+                svg {
+                    opacity: 0;
+                }
+                &:after {
+                    opacity: 1;
+                }
+            }
+            &:after {              //   ====================> "&" means parent hover
+                content: '';
+                font-size: 12px;  // ====> 9px
+                letter-spacing: 2px;
+                position: absolute;
+                bottom: 0;
+                display: block;
+                width: 100%;
+                text-align: center;
+                opacity: 0;
+                transition: all 0.3s ease-in-out;
+            }
+            &:first-child {
+                &::after {
+                    content: 'Home';
+                }
+            }
+        }
+        a.about-link {
+            &:after {
+                content: 'ABOUT';
+            }
+        }
+        a.contact-link {
+            &:after {
+                content: 'CONTACT';
+            }
+        }
+        a.active {
+            svg {
+                color: #ffd700;
+            }
+        }
+    }
+
+    ul {
+        position: absolute;
+        bottom: 20px;
+        width: 100%;
+        display: block;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        text-align: center;
+        li {
+            a {
+                padding: 7px 0;
+                display: block;
+                font-size: 12px;
+                line-height: 16px;
+
+                &:hover svg {
+                    color: #ffd700;
+                }
+            }
+        }
+    }
+}
