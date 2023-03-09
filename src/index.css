@@ -2,101 +2,18 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-size: 24px;
+  list-style: none;
 }
 html {
-  font-family: 'Poppins', sans-serif;
-  font-family: 'Roboto Mono', monospace;
-  font-size: 20px;
+  font-size: 62.5%;
 }
 body {
-  width: auto;
-  height: auto;
-}
-/* nav */
-.myNav {
-  display: flex;
-  align-items: center;
-  background: linear-gradient(90deg, rgba(103, 34, 128, 1),rgba(166, 38, 211, 1));
-  padding: 0 4.5rem;  
-  height: 90px;
-  color: white;
-  margin-bottom: 3.5rem;
-}
-.myNav > .meme-logo {
-  width: 60px;
-  margin-right: 1rem;
-}
-.meme-title {
-  margin-right: auto;
-  font-size: 1.5rem;
-  letter-spacing: -1px;
-}
-.meme-title-right {
-  font-size: .9rem;
-}
-/* Form */
-
-.hero-main {
-  padding: 4rem;
-  border: none;
-  border-radius: 9px;
-  margin: 6rem 10rem;
-  min-height: 790px;
-  box-shadow: 1px 1px 6px 2px rgb(159, 159, 159);
-}
-/* Meme - form - content */
-.myForm {
-  width: 100%;
-}
-.my-inputs-all {
-  display: flex;
-  justify-content: center;
-  gap: 1.7rem;
-}
-.myinput {
-  display: inline-block;
-  width: 40%;
-  height: 80px;
-  border-radius: 10px;
-  padding-left: 1rem;
-  font-size: 1.3rem;
-  border: 2px solid rgb(134, 134, 134);
-  outline: none;
-}
-.myinput::placeholder {
-  color: rgb(145, 145, 145);
-}
-.btn-sumbit {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.btn-sumbit > button {
-  display: inline-block;
-  width: 82%;
-  height: 85px;
-  display: inline-block;
-  justify-content: center;
-  border-radius: 10px;
-  border: none;
-  margin-top: 1.5rem;
-  background: linear-gradient(60deg, rgba(103, 34, 128, 1),rgba(166, 38, 211, 1));
-  color: white;
-  font-size: 1.6rem;
-  cursor: pointer;
-  transition: .3s;
-} 
-.btn-sumbit > button:hover {
-  background: linear-gradient(60deg, rgb(82, 25, 102),rgb(135, 29, 174));
-}
-.icon-img {
-  margin-left: .4rem;
-}
-.meme-image {
-  width: 550px;
-  height: 550px;
-  display: flex;
-  margin: 2rem auto;
-  border-radius: 4px;
+  font: 300 11px/1.4 'Helvetica Neue', 'sans-serif';
+  color: #444;
+  background: #022c43;
+  overflow: hidden;
+  display: block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
